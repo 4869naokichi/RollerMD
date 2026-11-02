@@ -2,8 +2,6 @@
 
 [README に戻る](../README.md)
 
-本ドキュメントは現在の `Core/Src/main.c`、`Core/Src/stm32f3xx_it.c`、`Core/Src/tim.c` の実装を説明します。制御性能を保証するものではありません。
-
 ## 制御ループ
 
 TIM6 更新割り込み（`TIM6_DAC1_IRQHandler`）から `controller()` を実行します。コード中の制御周期は `T_ctrl = 0.001f`（**1 ms / 1 kHz**）です。
